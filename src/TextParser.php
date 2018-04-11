@@ -1,6 +1,6 @@
 <?php
 
-namespace aymanrb\UnstructuredTextParser;
+namespace DPOLocalBryceJ\UnstructuredTextParser;
 
 use DirectoryIterator;
 use Monolog\Handler\StreamHandler;
