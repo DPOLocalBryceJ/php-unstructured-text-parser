@@ -1,5 +1,5 @@
 {
-    "name": "aymanrb/php-unstructured-text-parser",
+    "name": "dpolocalbrycej/php-unstructured-text-parser",
     "description": "A PHP Class to help extract text out of documents that are not structured in a processing friendly manner",
     "keywords": [
         "text parser", "extract data", "php parser", "templates parsing", "regex parsing", "form parsing", "text parse"
@@ -18,22 +18,22 @@
             "name": "Pavel",
             "homepage": "http://www.aisamiery.ru",
             "role": "Developer"
+        },
+        {
+            "name": "Bryce",
+            "homepage": "https://dpolocal.com",
+            "role": "Developer"
         }
 
     ],
-    "homepage": "https://github.com/aymanrb/php-unstructured-text-parser",
+    "homepage": "https://github.com/DPOLocalBryceJ/php-unstructured-text-parser",
     "support": {
-        "issues": "https://github.com/aymanrb/php-unstructured-text-parser/issues",
+        "issues": "https://github.com/DPOLocalBryceJ/php-unstructured-text-parser/issues",
         "source": "https://github.com/aymanrb/php-unstructured-text-parser"
     },
     "autoload": {
         "psr-4": {
             "aymanrb\\UnstructuredTextParser\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "aymanrb\\UnstructuredTextParser\\Tests\\": "tests/"
         }
     },
     "require": {
