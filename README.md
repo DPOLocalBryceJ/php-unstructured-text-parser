@@ -1,10 +1,5 @@
 Unstructured Text Parser [PHP]
 ===========================================
-[![Build Status](https://travis-ci.org/aymanrb/php-unstructured-text-parser.svg?branch=master)](https://travis-ci.org/aymanrb/php-unstructured-text-parser)
-[![Latest Stable Version](https://poser.pugx.org/aymanrb/php-unstructured-text-parser/v/stable.svg)](https://packagist.org/packages/aymanrb/php-unstructured-text-parser)
-[![Latest Unstable Version](https://poser.pugx.org/aymanrb/php-unstructured-text-parser/v/unstable.svg)](https://packagist.org/packages/aymanrb/php-unstructured-text-parser)
-[![License](https://poser.pugx.org/aymanrb/php-unstructured-text-parser/license.svg)](https://packagist.org/packages/aymanrb/php-unstructured-text-parser)
-
 
 About this Class
 ----------------------------------
@@ -14,10 +9,6 @@ Useful when you want to parse data out of:
 * Emails generated from web forms
 * Documents with definable templates / expressions
 
-Current Version
-----------
-1.2.0
-
 
 Installation
 ----------
@@ -25,24 +16,24 @@ Installation
 #### 1- Using [composer](https://getcomposer.org/) simply run the following:
 
 ```shell
-$ composer require aymanrb/php-unstructured-text-parser
+$ composer require dpolocalbrycej/php-unstructured-text-parser
 ```
 
 ####2- Clone / Copy the files from this repository to your local libs directory:
 
 ```shell
-$ git clone https://github.com/aymanrb/php-unstructured-text-parser.git
+$ git clone https://github.com/dpolocalbrycej/php-unstructured-text-parser.git
 ```
 
 
 
-[Usage example](https://github.com/aymanrb/php-unstructured-text-parser/blob/master/examples/run.php)
+[Usage example](https://github.com/dpolocalbrycej/php-unstructured-text-parser/blob/master/examples/run.php)
 ----------
 ```php
 <?php
 include_once __DIR__ . '/../vendor/autoload.php';
 
-$parser = new aymanrb\UnstructuredTextParser\TextParser('/path/to/templatesDirectory');
+$parser = new dpolocalbrycej\UnstructuredTextParser\TextParser('/path/to/templatesDirectory');
 
 $textToParse = 'Text to be parsed fetched from a file, mail, web service, or even added directly to the a string variable like this';
 
