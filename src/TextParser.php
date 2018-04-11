@@ -72,7 +72,9 @@ class TextParser
 
         $templates = [];
         foreach ($this->directoryIterator as $fileInfo) {
-            $templates[$fileInfo->getPathname()] = file_get_contents($fileInfo->getPathname());
+            if($fileInfo->isFile()) {
+                $templates[$fileInfo->getPathname()] = file_get_contents($fileInfo->getPathname());
+            }
         }
 
         return $templates;
@@ -195,15 +197,17 @@ class TextParser
         $maxMatch = -1;
 
         foreach ($this->directoryIterator as $fileInfo) {
-            $templateContent = file_get_contents($fileInfo->getPathname());
+            if($fileInfo->isFile()) {
+                $templateContent = file_get_contents($fileInfo->getPathname());
 
-            similar_text($text, $templateContent, $matchPercentage); //Compare template against text to decide on similarity percentage
+                similar_text($text, $templateContent, $matchPercentage); //Compare template against text to decide on similarity percentage
 
-            if ($matchPercentage > $maxMatch) {
-                $this->logger->debug(sprintf('Template "%s" is a best match for now', $fileInfo->getPathname()));
+                if ($matchPercentage > $maxMatch) {
+                    $this->logger->debug(sprintf('Template "%s" is a best match for now', $fileInfo->getPathname()));
 
-                $maxMatch = $matchPercentage;
-                $matchedTemplate = [$fileInfo->getPathname() => $templateContent];
+                    $maxMatch = $matchPercentage;
+                    $matchedTemplate = [$fileInfo->getPathname() => $templateContent];
+                }
             }
         }
 
