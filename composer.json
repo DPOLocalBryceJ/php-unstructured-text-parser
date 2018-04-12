@@ -4,7 +4,7 @@
     "keywords": [
         "text parser", "extract data", "php parser", "templates parsing", "regex parsing", "form parsing", "text parse"
     ],
-    "version": "1.2.5",
+    "version": "1.2.7",
     "type": "library",
     "license": "MIT",
     "authors": [
