@@ -29,11 +29,11 @@
     "homepage": "https://github.com/DPOLocalBryceJ/php-unstructured-text-parser",
     "support": {
         "issues": "https://github.com/DPOLocalBryceJ/php-unstructured-text-parser/issues",
-        "source": "https://github.com/aymanrb/php-unstructured-text-parser"
+        "source": "https://github.com/DPOLocalBryceJ/php-unstructured-text-parser"
     },
     "autoload": {
         "psr-4": {
-            "aymanrb\\UnstructuredTextParser\\": "src/"
+            "DPOLocalBryceJ\\UnstructuredTextParser\\": "src/"
         }
     },
     "require": {
